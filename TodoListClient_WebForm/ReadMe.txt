@@ -1,0 +1,1 @@
+﻿https://devblogs.microsoft.com/premier-developer/convert-asp-net-webforms-with-windows-authentication-to-use-aad/

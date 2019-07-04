@@ -1,0 +1,1 @@
+﻿https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v1-angularjs-spa

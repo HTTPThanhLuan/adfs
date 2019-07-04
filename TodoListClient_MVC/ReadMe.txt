@@ -1,0 +1,1 @@
+﻿https://www.c-sharpcorner.com/article/azure-ad-authentication-for-mvc-web-application/

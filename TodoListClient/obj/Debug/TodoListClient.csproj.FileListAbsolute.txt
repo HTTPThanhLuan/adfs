@@ -1,0 +1,17 @@
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\bin\Debug\TodoListClient.exe.config
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\bin\Debug\TodoListClient.exe
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\bin\Debug\TodoListClient.pdb
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\obj\Debug\MainWindow.baml
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\obj\Debug\MainWindow.g.cs
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\obj\Debug\App.g.cs
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\obj\Debug\TodoListClient_MarkupCompile.cache
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\obj\Debug\TodoListClient.g.resources
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\obj\Debug\TodoListClient.Properties.Resources.resources
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\obj\Debug\TodoListClient.csproj.GenerateResource.cache
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\obj\Debug\TodoListClient.csproj.CoreCompileInputs.cache
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\obj\Debug\TodoListClient.csproj.CopyComplete
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\obj\Debug\TodoListClient.exe
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\obj\Debug\TodoListClient.pdb
+C:\Users\Mr.Luan\Downloads\active-directory-dotnet-native-desktop-master\active-directory-dotnet-native-desktop-master\TodoListClient\obj\Debug\TodoListClient.csprojAssemblyReference.cache
