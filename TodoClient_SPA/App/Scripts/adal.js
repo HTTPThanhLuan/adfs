@@ -410,6 +410,7 @@ AuthenticationContext.prototype.clearCacheForResource = function (resource) {
 * After logout, it will redirect to post_logout page if provided.
 */
 AuthenticationContext.prototype.logOut = function () {
+      var idTokenInfo = this._getItem(this.CONSTANTS.STORAGE.IDTOKEN); // New Line
     this.clearCache();
     var tenant = 'common';
     var logout = '';
@@ -424,6 +425,7 @@ AuthenticationContext.prototype.logOut = function () {
 
     if (this.config.postLogoutRedirectUri) {
         logout = 'post_logout_redirect_uri=' + encodeURIComponent(this.config.postLogoutRedirectUri);
+        logout += "&id_token_hint=" + idTokenInfo; // New Line
     }
 
     var urlNavigate = this.instance + tenant + '/oauth2/logout?' + logout;
