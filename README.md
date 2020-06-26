@@ -21,6 +21,49 @@ Settup ADFS WINDOw SERVER 2016.
    
 4. Login user:
     using user in  Active Directory Domain Services:
+    
+5. implement logout (single page with angularjs using adal.js)
+   // when user click logout button then login page will appear.
+   (https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/development/single-page-application-with-ad-fs) 
+
+    5.1. In adaj.js
+    AuthenticationContext.prototype.logOut = function () {
+    var idTokenInfo = this._getItem(this.CONSTANTS.STORAGE.IDTOKEN); // New Line
+    this.clearCache();
+    var tenant = 'common';
+    var logout = '';
+    this._user = null;
+    if (this.config.tenant) {
+        tenant = this.config.tenant;
+    }
+
+    if (this.config.instance) {
+        this.instance = this.config.instance;
+    }
+
+    if (this.config.postLogoutRedirectUri) {
+        logout = 'post_logout_redirect_uri=' + encodeURIComponent(this.config.postLogoutRedirectUri);
+        logout += "&id_token_hint=" + idTokenInfo; // New Line
+    }
+
+    var urlNavigate = this.instance + tenant + '/oauth2/logout?' + logout;
+    this._logstatus('Logout navigate to: ' + urlNavigate);
+    this.promptUser(urlNavigate);
+};
+
+   5.2. in app.js, adalProvider is dependency
+
+  adalProvider.init(
+        {
+            instance: 'https://win-ocsrisfnhe0.arabitpro.local/', // your STS URL
+            tenant: 'adfs',                      // this should be adfs
+            clientId: 'https://localhost:65168', // your client ID of the
+            postLogoutRedirectUri:'http://localhost:65168/index.html#/TodoList' // page is required login so it go to adfs's loginpage  automaticlly
+
+            //cacheLocation: 'localStorage', // enable this for IE, as sessionStorage does not work for localhost.
+        },
+        $httpProvider
+    );
      
 
 
