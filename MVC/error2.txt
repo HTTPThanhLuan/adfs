@@ -1,0 +1,75 @@
+Solve=> in server dfs => window\run  type: mmc
+
+========
+Server Error in '/' Application.
+The remote certificate is invalid according to the validation procedure.
+Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.
+
+Exception Details: System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+
+Source Error:
+
+An unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.
+
+Stack Trace:
+
+
+[AuthenticationException: The remote certificate is invalid according to the validation procedure.]
+   System.Net.TlsStream.EndWrite(IAsyncResult asyncResult) +237
+   System.Net.PooledStream.EndWrite(IAsyncResult asyncResult) +15
+   System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar) +121
+
+[WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel.]
+   System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult) +638
+   System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar) +65
+
+[HttpRequestException: An error occurred while sending the request.]
+   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +102
+   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +64
+   Microsoft.IdentityModel.Protocols.<GetDocumentAsync>d__8.MoveNext() +360
+
+[IOException: IDX20804: Unable to retrieve document from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.]
+   Microsoft.IdentityModel.Protocols.<GetDocumentAsync>d__8.MoveNext() +799
+   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +102
+   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +64
+   Microsoft.IdentityModel.Protocols.WsFederation.<GetAsync>d__4.MoveNext() +296
+   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +102
+   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +64
+   System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task) +26
+   Microsoft.IdentityModel.Protocols.<GetConfigurationAsync>d__24.MoveNext() +1001
+
+[InvalidOperationException: IDX20803: Unable to obtain configuration from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.]
+   Microsoft.IdentityModel.Protocols.<GetConfigurationAsync>d__24.MoveNext() +1481
+   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +102
+   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +64
+   Microsoft.Owin.Security.WsFederation.<ApplyResponseChallengeAsync>d__5.MoveNext() +327
+   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +102
+   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +64
+   Microsoft.Owin.Security.Infrastructure.<ApplyResponseCoreAsync>d__40.MoveNext() +272
+   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +102
+   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +64
+   Microsoft.Owin.Security.Infrastructure.<ApplyResponseAsync>d__39.MoveNext() +271
+   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +102
+   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +64
+   Microsoft.Owin.Security.Infrastructure.<TeardownAsync>d__34.MoveNext() +158
+   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +102
+   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +64
+   Microsoft.Owin.Security.Infrastructure.<Invoke>d__5.MoveNext() +659
+   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +102
+   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +64
+   Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.<RunApp>d__7.MoveNext() +179
+   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +102
+   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +64
+   Microsoft.Owin.Security.Infrastructure.<Invoke>d__5.MoveNext() +519
+   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +102
+   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +64
+   Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.<RunApp>d__7.MoveNext() +179
+   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +102
+   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +64
+   Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.<DoFinalWork>d__12.MoveNext() +180
+   Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.StageAsyncResult.End(IAsyncResult ar) +69
+   Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContext.EndFinalWork(IAsyncResult ar) +64
+   System.Web.AsyncEventExecutionStep.InvokeEndHandler(IAsyncResult ar) +165
+   System.Web.AsyncEventExecutionStep.OnAsyncEventCompletion(IAsyncResult ar) +9927257
+
+Version Information: Microsoft .NET Framework Version:4.0.30319; ASP.NET Version:4.8.4210.0

@@ -1,0 +1,31 @@
+﻿If you get error can not login "Contact your administrator for details." Check in event log of ADFS
+
+=====================================================
+Encountered error during federation passive request. 
+
+Additional Data 
+
+Protocol Name: 
+wsfed 
+
+Relying Party: 
+https://hrm.vlu.edu.vn/ 
+
+Exception details: 
+Microsoft.IdentityServer.RequestFailedException: MSIS7012: An error occurred while processing the request. Contact your administrator for details. ---> Microsoft.IdentityServer.Service.SecurityTokenService.EmptyOrMissingWSFederationPassiveEndpointException: MSIS5004: The WSFederationPassiveEndpoint address is not configured on the relying party trust identified by the endpoint 'https://hrm.vlu.edu.vn/'. It is required to process the current request.
+   at Microsoft.IdentityServer.Web.Protocols.WSFederation.WSFederationProtocolHandler.ValidateAndUpdateReplyToForSigninMessage(MSISSignInRequestMessage& wsFedSigninRequest, WrappedHttpListenerRequest httpRequest)
+   at Microsoft.IdentityServer.Web.Protocols.WSFederation.WSFederationProtocolHandler.BuildSignInResponseCoreWithSerializedToken(MSISSignInRequestMessage wsFederationPassiveRequest, WrappedHttpListenerContext context, SecurityTokenElement signOnTokenElement, Boolean isKmsiRequested, Boolean isApplicationProxyTokenRequired)
+   at Microsoft.IdentityServer.Web.Protocols.WSFederation.WSFederationProtocolHandler.BuildSignInResponseCoreWithSecurityToken(WSFederationSignInContext context, SecurityToken securityToken, SecurityToken deviceSecurityToken)
+   at Microsoft.IdentityServer.Web.Protocols.WSFederation.WSFederationProtocolHandler.BuildSignInResponse(WSFederationSignInContext federationPassiveContext, SecurityToken securityToken, SecurityToken deviceSecurityToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityServer.Web.Protocols.WSFederation.WSFederationProtocolHandler.BuildSignInResponse(WSFederationSignInContext federationPassiveContext, SecurityToken securityToken, SecurityToken deviceSecurityToken)
+   at Microsoft.IdentityServer.Web.Protocols.WSFederation.WSFederationProtocolHandler.Process(ProtocolContext context)
+   at Microsoft.IdentityServer.Web.PassiveProtocolListener.ProcessProtocolRequest(ProtocolContext protocolContext, PassiveProtocolHandler protocolHandler)
+   at Microsoft.IdentityServer.Web.PassiveProtocolListener.OnGetContext(WrappedHttpListenerContext context)
+
+Microsoft.IdentityServer.Service.SecurityTokenService.EmptyOrMissingWSFederationPassiveEndpointException: MSIS5004: The WSFederationPassiveEndpoint address is not configured on the relying party trust identified by the endpoint 'https://hrm.vlu.edu.vn/'. It is required to process the current request.
+   at Microsoft.IdentityServer.Web.Protocols.WSFederation.WSFederationProtocolHandler.ValidateAndUpdateReplyToForSigninMessage(MSISSignInRequestMessage& wsFedSigninRequest, WrappedHttpListenerRequest httpRequest)
+   at Microsoft.IdentityServer.Web.Protocols.WSFederation.WSFederationProtocolHandler.BuildSignInResponseCoreWithSerializedToken(MSISSignInRequestMessage wsFederationPassiveRequest, WrappedHttpListenerContext context, SecurityTokenElement signOnTokenElement, Boolean isKmsiRequested, Boolean isApplicationProxyTokenRequired)
+   at Microsoft.IdentityServer.Web.Protocols.WSFederation.WSFederationProtocolHandler.BuildSignInResponseCoreWithSecurityToken(WSFederationSignInContext context, SecurityToken securityToken, SecurityToken deviceSecurityToken)
+   at Microsoft.IdentityServer.Web.Protocols.WSFederation.WSFederationProtocolHandler.BuildSignInResponse(WSFederationSignInContext federationPassiveContext, SecurityToken securityToken, SecurityToken deviceSecurityToken)
+
